@@ -1,1 +1,0 @@
-require('fullpage.js/dist/jquery.fullpage.min.css')
