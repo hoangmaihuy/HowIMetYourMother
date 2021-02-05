@@ -23,3 +23,13 @@ img {
   position: fixed;
   z-index: -1;
 }
+
+.episode_list {
+  font-family: "Bad Script";
+  padding-top: 1rem;
+}
+
+.episode_title {
+  font-family: "Moon Flower";
+  font-size: 4rem;
+}
