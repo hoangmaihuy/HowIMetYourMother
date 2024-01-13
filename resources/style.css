@@ -1,5 +1,79 @@
 @import url(fonts/moon-flower/moon-flower.css);
 
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(5px)
+  }
+
+  50% {
+    transform: translateX(-5px)
+  }
+
+  75% {
+    transform: translateX(5px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(2px, 2px) rotate(2deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-2px, 2px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.constant-tilt-shake {
+  animation: tilt-shaking 0.3s infinite;
+}
+
+.constant-tilt-n-move-shaking {
+  animation: tilt-n-move-shaking 0.3s infinite;
+}
+
 #profile {
   border-radius: 50%;
   width: 200px;
@@ -13,6 +87,11 @@
 
 img {
   border-radius: 8px;
+}
+
+q {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #HIMYM {
@@ -32,4 +111,20 @@ img {
 .episode_title {
   font-family: "Moon Flower";
   font-size: 4rem;
+}
+
+.title_icon {
+  height: 2em;
+  animation: tilt-shaking 0.3s infinite;
+}
+
+#vtm-logo {
+  animation: tilt-n-move-shaking 0.3s infinite;
+  height: 5em;
+  vertical-align: top;
+  margin-top: -0.25em;
+}
+
+video {
+  border-radius: 8px;
 }
